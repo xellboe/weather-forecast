@@ -1,0 +1,100 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  padding: 30px;
+  width: 360px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+
+  ::before {
+    content: "";
+
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    z-index: -1;
+
+    width: calc(100% - 20px);
+    height: 100%;
+
+    background: #ffffff;
+    box-shadow: 0px 5px 20px rgba(27, 108, 114, 0.25);
+    border-radius: 6px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+  }
+
+  &__city {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+
+    span {
+      display: inline-block;
+      vertical-align: text-top;
+
+      padding: 3px 5px;
+      background: #e5464f;
+      border-radius: 6px;
+
+      color: #fff;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+
+  &__addiction_info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    // line-height: 1.2;
+  }
+
+  &__weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__value {
+    font-size: 60px;
+    line-height: 1;
+    color: #000000;
+
+    sup {
+      font-size: 50%;
+    }
+  }
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+.footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 8px 15px;
+  background: #e3f1ee;
+
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  color: #2e7695;
+
+  a {
+    color: #2e7695;
+    text-decoration: none;
+  }
+}

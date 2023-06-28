@@ -1,0 +1,16 @@
+@import "./reset.scss";
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700);
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+
+  font-family: "Rubik", sans-serif;
+}
